@@ -1,6 +1,6 @@
 # Full-Stack Market Application
 
-A full-stack e-commerce application built with **React**, **Redux**, **Node.js**, **Express**, and **MongoDB**. This app allows users to browse products, manage their shopping cart, and complete the checkout process with user authentication and JWT-based security.
+A full-stack e-commerce application built with **React**, **Redux**, **Node.js**, **Bootstrap**, and **MongoDB**. This app allows users to browse products, manage their shopping cart, and complete the checkout process with user authentication and JWT-based security.
 
 ## Features
 
@@ -12,12 +12,25 @@ A full-stack e-commerce application built with **React**, **Redux**, **Node.js**
 
 ## Dependencies
 
+[React](https://react.dev/)
 ```
 npm install -g create-react-app
 ```
+
+[Redux](https://redux.js.org/)
 ```
 npm install redux react-redux
 ```
+
+[Bootstrap](https://react-bootstrap.github.io/)
+```
+npm install react-bootstrap bootstrap
+```
+The following line can be included in your src/index.js or App.js file
+```
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
 Reinstall all dependencies using package.json
 ```
 npm install
