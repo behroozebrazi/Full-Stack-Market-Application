@@ -1,6 +1,7 @@
 # Full-Stack Market Application
 
 A full-stack e-commerce application built with **React**, **Redux**, **Node.js**, **Bootstrap**, and **MongoDB**. This app allows users to browse products, manage their shopping cart, and complete the checkout process with user authentication and JWT-based security.
+<br><br>
 
 ## Features
 
@@ -9,6 +10,7 @@ A full-stack e-commerce application built with **React**, **Redux**, **Node.js**
 - User authentication (login & registration)
 - Secure JWT-based authentication
 - Responsive UI
+<br><br>
 
 ## Dependencies
 
@@ -31,10 +33,11 @@ The following line can be included in your src/index.js or App.js file
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-Reinstall all dependencies using package.json
+If the packages don't work correctly, delete the `node_modules` folder and `package-lock.json`, then reinstall all dependencies using `package.json`.
 ```
 npm install
 ```
+<br><br>
 
 ## VS Code Extensions
 
@@ -46,3 +49,4 @@ npm install
 
 + [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
   - Auto rename paired HTML/XML tag
+
