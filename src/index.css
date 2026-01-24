@@ -1,9 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #dddddd;
 }
 
-* {
-  box-sizing: border-box;
+main {
+  min-height: 80vh;
 }
