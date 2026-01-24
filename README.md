@@ -18,6 +18,10 @@ npm install -g create-react-app
 ```
 npm install redux react-redux
 ```
+Reinstall all dependencies using package.json
+```
+npm install
+```
 
 ## VS Code Extensions
 
