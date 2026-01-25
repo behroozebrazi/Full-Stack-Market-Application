@@ -1,4 +1,5 @@
 import React from 'react'
+import { LinkContainer } from 'react-router-bootstrap'
 import { Container, Navbar, Nav } from 'react-bootstrap'
 
 import './Header.css'
@@ -9,18 +10,28 @@ const Header = () => {
     <header>
       <Navbar className='navbar-bg' variant='dark'>
         <Container>
-          <Navbar.Brand href='/'>FC Market</Navbar.Brand>
+
+          <LinkContainer to='/'>
+            <Navbar.Brand>FC Market</Navbar.Brand>
+          </LinkContainer>
+
           <Nav className='gap-3'>
-            <Nav.Link href='/cart'>
-              <i className='fa fa-shopping-cart fa-lg'></i>
-            </Nav.Link>
-            <Nav.Link href='/account'>
-              <i className='fa fa-user fa-lg'></i>
-            </Nav.Link>
+            <LinkContainer to='/cart'>
+              <Nav.Link>
+                <i className='fa fa-shopping-cart fa-lg'></i>
+              </Nav.Link>
+            </LinkContainer>
+
+            <LinkContainer to='/account'>
+              <Nav.Link>
+                <i className='fa fa-user fa-lg'></i>
+              </Nav.Link>
+            </LinkContainer>
           </Nav>
+
         </Container>
       </Navbar>
-    </header>
+    </header >
   )
 }
 
