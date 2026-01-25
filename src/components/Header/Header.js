@@ -12,17 +12,20 @@ const Header = () => {
         <Container>
 
           <LinkContainer to='/'>
+            {/* <Navbar.Brand href='/'> */}
             <Navbar.Brand>FC Market</Navbar.Brand>
           </LinkContainer>
 
           <Nav className='gap-3'>
             <LinkContainer to='/cart'>
+              {/* <Nav.Link href='/cart'> */}
               <Nav.Link>
                 <i className='fa fa-shopping-cart fa-lg'></i>
               </Nav.Link>
             </LinkContainer>
 
             <LinkContainer to='/account'>
+              {/* <Nav.Link href='/account'> */}
               <Nav.Link>
                 <i className='fa fa-user fa-lg'></i>
               </Nav.Link>

@@ -14,22 +14,26 @@ A full-stack e-commerce application built with **React**, **Redux**, **Node.js**
 
 ## Dependencies
 
-React [Documentation](https://react.dev/)
+[🌐](https://react.dev/)
+React
 ```
 npm install -g create-react-app
 ```
 
-React Router [Documentation](https://reactrouter.com/)
+[🌐](https://reactrouter.com/)
+React Router
 ```
 npm install react-router-dom
 ```
 
-React Router Bootstrap [Documentation](https://github.com/react-bootstrap/react-router-bootstrap)
+[🌐](https://github.com/react-bootstrap/react-router-bootstrap)
+React Router Bootstrap
 ```
 npm install react-router-bootstrap
 ```
 
-React Bootstrap [Documentation](https://react-bootstrap.github.io/)
+[🌐](https://react-bootstrap.github.io/)
+React Bootstrap
 ```
 npm install react-bootstrap bootstrap
 ```
@@ -38,12 +42,14 @@ The following line can be included in your src/index.js or App.js file
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-Redux [Documentation](https://redux.js.org/)
+[🌐](https://redux.js.org/)
+Redux
 ```
 npm install redux react-redux
 ```
 
-Font awesome [Documentation](https://cdnjs.com/libraries/font-awesome)
+[🌐](https://cdnjs.com/libraries/font-awesome)
+Font awesome
 Search [icons](https://fontawesome.com/)
 ```
 npm install --save font-awesome
