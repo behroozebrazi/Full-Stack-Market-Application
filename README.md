@@ -33,6 +33,16 @@ The following line can be included in your src/index.js or App.js file
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
+Install font awesome from [here](https://cdnjs.com/libraries/font-awesome)
+```
+npm install --save font-awesome
+```
+The following line can be included in your src/index.js or App.js file
+```
+import 'font-awesome/css/font-awesome.min.css';
+```
+Search icons from [fontawesome.com](https://fontawesome.com/)
+
 If the packages don't work correctly, delete the `node_modules` folder and `package-lock.json`, then reinstall all dependencies using `package.json`.
 ```
 npm install

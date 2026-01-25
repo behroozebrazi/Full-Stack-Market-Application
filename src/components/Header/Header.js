@@ -5,19 +5,21 @@ import './Header.css'
 
 
 const Header = () => {
-  return (
-    <header>
-      <Navbar className='nav-bg' variant='dark'>
-        <Container>
-          <Navbar.Brand href='/'>FC Market</Navbar.Brand>
-          <Nav>
-            <Nav.Link href='/cart'>Cart</Nav.Link>
-            <Nav.Link href='/account'>Account</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    </header>
-  )
+  return <header>
+    <Navbar className='navbar-bg' variant='dark'>
+      <Container>
+        <Navbar.Brand href='/'>FC Market</Navbar.Brand>
+        <Nav>
+          <Nav.Link href='/cart'>
+            <i className='fa fa-shopping-cart fa-lg mx-2'></i>
+          </Nav.Link>
+          <Nav.Link href='/account'>
+            <i className='fa fa-user fa-lg mx-2'></i>
+          </Nav.Link>
+        </Nav>
+      </Container>
+    </Navbar>
+  </header>
 }
 
 export default Header
