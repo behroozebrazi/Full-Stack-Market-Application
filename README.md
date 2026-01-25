@@ -14,17 +14,22 @@ A full-stack e-commerce application built with **React**, **Redux**, **Node.js**
 
 ## Dependencies
 
-[React](https://react.dev/)
+React [Documentation](https://react.dev/)
 ```
 npm install -g create-react-app
 ```
 
-[Redux](https://redux.js.org/)
+React Router [Documentation](https://reactrouter.com/)
 ```
-npm install redux react-redux
+npm install react-router-dom
 ```
 
-[Bootstrap](https://react-bootstrap.github.io/)
+React Router Bootstrap [Documentation](https://github.com/react-bootstrap/react-router-bootstrap)
+```
+npm install react-router-bootstrap
+```
+
+React Bootstrap [Documentation](https://react-bootstrap.github.io/)
 ```
 npm install react-bootstrap bootstrap
 ```
@@ -33,7 +38,13 @@ The following line can be included in your src/index.js or App.js file
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-Install font awesome from [here](https://cdnjs.com/libraries/font-awesome)
+Redux [Documentation](https://redux.js.org/)
+```
+npm install redux react-redux
+```
+
+Font awesome [Documentation](https://cdnjs.com/libraries/font-awesome)
+Search [icons](https://fontawesome.com/)
 ```
 npm install --save font-awesome
 ```
@@ -41,7 +52,6 @@ The following line can be included in your src/index.js or App.js file
 ```
 import 'font-awesome/css/font-awesome.min.css';
 ```
-Search icons from [fontawesome.com](https://fontawesome.com/)
 
 If the packages don't work correctly, delete the `node_modules` folder and `package-lock.json`, then reinstall all dependencies using `package.json`.
 ```
