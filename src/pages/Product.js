@@ -12,15 +12,22 @@ const Product = () => {
     return item._id === id
   })
 
-  if (!product) { return <div>Loading...</div> }
-
-  console.log(product.image)
+  if (!product) {
+    return (
+      <div className="text-center my-5">
+        <p className="fs-4">The product not found!</p>
+        <Link to='/' className='btn btn-light text-start my-3'>
+          Go Home
+        </Link>
+      </div>
+    )
+  }
 
   return (
     <div>
       <div className="d-flex justify-content-start">
         <Link to='/' className='btn btn-light text-start my-3'>
-          Return to home
+          Go Home
         </Link>
       </div>
 

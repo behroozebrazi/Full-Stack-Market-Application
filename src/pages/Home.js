@@ -8,7 +8,7 @@ import products from '../products'
 const Home = () => {
   return (
     <div>
-      <h2 className='mb-5'>Produts</h2>
+      <h2 className='my-4 fw-bold'>༺ Products ༻</h2>
       <Row>
         {products.map((item) => {
           return (
