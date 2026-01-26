@@ -45,7 +45,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 [🌐](https://redux.js.org/)
 Redux
 ```
-npm install redux react-redux
+npm install --save redux react-redux redux-thunk
 ```
 
 [🌐](https://axios-http.com/)
