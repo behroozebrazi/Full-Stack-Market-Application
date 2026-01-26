@@ -1,18 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
+import axios from 'axios'
 
-import products from '../products'
+// import products from '../products'
 
 
 const Product = () => {
   const { id = '' } = useParams()
-  const product = products.find((item) => {
-    return item._id === id
-  })
 
-  if (!product) {
+  // const product = products.find((item) => {
+  //   return item._id === id
+  // })
+
+  const [product, setProduct] = useState({})
+
+  useEffect(
+    () => {
+      const sendRequest = async () => {
+        try {
+          const response = await axios.get(`http://localhost:8000/api/products/${id}`)
+          setProduct(response.data)
+        } catch (error) {
+          console.log(error)
+        }
+      }
+      sendRequest()
+    }, [id])
+
+
+  if (id === '' || JSON.stringify(product) === '{}') {
     return (
       <div className="text-center my-5">
         <p className="fs-4">The product not found!</p>
@@ -22,6 +40,7 @@ const Product = () => {
       </div>
     )
   }
+
 
   return (
     <div>
