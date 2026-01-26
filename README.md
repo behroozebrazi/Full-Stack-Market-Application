@@ -48,6 +48,12 @@ Redux
 npm install redux react-redux
 ```
 
+[🌐](https://axios-http.com/)
+axios
+```
+npm install --save axios
+```
+
 [🌐](https://cdnjs.com/libraries/font-awesome)
 Font awesome ([icons](https://fontawesome.com/))
 ```
@@ -74,4 +80,5 @@ npm install
 
 + [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
   - Auto rename paired HTML/XML tag
+
 
