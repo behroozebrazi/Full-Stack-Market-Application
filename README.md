@@ -49,8 +49,7 @@ npm install redux react-redux
 ```
 
 [🌐](https://cdnjs.com/libraries/font-awesome)
-Font awesome
-Search [icons](https://fontawesome.com/)
+Font awesome ([icons](https://fontawesome.com/))
 ```
 npm install --save font-awesome
 ```
