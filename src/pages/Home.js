@@ -22,12 +22,10 @@ const Home = () => {
   //   sendRequest()
   // }, [])
 
+
   // Redux
   const dispatch = useDispatch()
   const productList = useSelector((state) => { return state.productList })
-
-  console.log(productList)
-
   const { loading, products } = productList
   useEffect(() => {
     dispatch(productListAction())
