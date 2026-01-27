@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button } from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 // import axios from 'axios'
 
 // import products from '../products'
@@ -11,6 +11,7 @@ import { productDetailAction } from '../action/productAction'
 
 const Product = () => {
   const { id = '' } = useParams()
+  const navigate = useNavigate()
 
   // const product = products.find((item) => {
   //   return item._id === id
@@ -39,6 +40,11 @@ const Product = () => {
   useEffect(() => {
     dispatch(productDetailAction(id))
   }, [dispatch, id])
+
+
+  const addToCartHandler = () => {
+    navigate(`/cart/${id}`)
+  }
 
 
   if (loading || id === '' || JSON.stringify(product) === '{}') {
@@ -77,7 +83,10 @@ const Product = () => {
         <Col md={3}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
-              <Button className='btn-block' type='button'>
+              <Button
+                onClick={addToCartHandler}
+                className='btn-block'
+                type='button'>
                 Add to cart
               </Button>
             </ListGroup.Item>
