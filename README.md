@@ -12,6 +12,21 @@ A full-stack e-commerce application built with **React**, **Redux**, **Node.js**
 - Responsive UI
 <br><br>
 
+## Screenshots
+
+### Products
+
+![Products Screenshot](screenshots/screenshot-products.png)
+
+### Product Details
+
+![Product Screenshot](screenshots/screenshot-product.png)
+
+### Shopping Cart
+
+![Shopping Cart Screenshot](screenshots/screenshot-cart.png)
+<br><br>
+
 ## Dependencies
 
 [🌐](https://react.dev/)
